@@ -1,0 +1,25 @@
+﻿@model WebApp1.Models.UsersID
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <form asp-action="Index" method="post">
+        <div class="text-center">
+            <h2>Enter name</h2>
+            <div class="form-group">
+                <label asp-for="Name">Your name:</label>
+                <input class="form-control" asp-for="Name" />
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
